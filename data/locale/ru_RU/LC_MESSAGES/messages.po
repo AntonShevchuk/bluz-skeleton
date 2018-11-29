@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bluz\n"
-"POT-Creation-Date: 2018-11-01 16:40+0200\n"
-"PO-Revision-Date: 2018-11-01 17:02+0200\n"
+"POT-Creation-Date: 2018-11-29 13:24+0200\n"
+"PO-Revision-Date: 2018-11-29 13:26+0200\n"
 "Last-Translator: Anton Shevchuk <Anton.Shevchuk@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -270,6 +270,7 @@ msgid "Activation"
 msgstr "Активация"
 
 #: application/models/Users/Mail.php:105
+#: application/modules/users/views/recovery.phtml:8
 msgid "Password Recovery"
 msgstr "Восстановление пароля"
 
@@ -280,7 +281,7 @@ msgid "Change email"
 msgstr "Изменить email"
 
 #: application/modules/acl/controllers/index.php:28
-#: application/layouts/partial/sidebar.phtml:72
+#: application/layouts/partial/sidebar.phtml:81
 msgid "Permissions"
 msgstr "Права доступа"
 
@@ -400,7 +401,7 @@ msgid "An unexpected error occurred with your request. Please try again later"
 msgstr "При обработке вашего запроса произошла ошибка. Поробуйте ещё раз"
 
 #: application/modules/pages/controllers/grid.php:27
-#: application/layouts/partial/sidebar.phtml:35
+#: application/layouts/partial/sidebar.phtml:44
 msgid "Pages"
 msgstr "Страницы"
 
@@ -421,7 +422,7 @@ msgid "The record was successfully updated"
 msgstr "Запись успешно обновлена"
 
 #: application/modules/system/controllers/index.php:22
-#: application/layouts/partial/sidebar.phtml:88
+#: application/layouts/partial/sidebar.phtml:97
 msgid "System"
 msgstr "Система"
 
@@ -482,9 +483,9 @@ msgstr "Пароль не верен"
 
 #: application/modules/users/controllers/crud/post.php:68
 msgid ""
-"Your account has been created and an activation link hasbeen sent to the e-"
+"Your account has been created and an activation link has been sent to the e-"
 "mail address you entered.<br/>Note that you must activate the account by "
-"clicking on the activation linkwhen you get the e-mail before you can login."
+"clicking on the activation link when you get the e-mail before you can login."
 msgstr ""
 "Ваша учётная запись создана в системе. На ваш email была отправлена ссылка, "
 "пройдя по которой вы активируете учётную запись."
@@ -570,7 +571,7 @@ msgid "Sign Out"
 msgstr "Выход"
 
 #: application/layouts/partial/navbar.phtml:56
-#: application/modules/users/views/signin.phtml:32
+#: application/modules/users/views/signin.phtml:36
 msgid "Sign In"
 msgstr "Вход"
 
@@ -582,19 +583,23 @@ msgstr "Бумажники"
 msgid "Phones"
 msgstr "Телефоны"
 
-#: application/layouts/partial/sidebar.phtml:43
+#: application/layouts/partial/sidebar.phtml:33
+msgid "Push Subscriptions"
+msgstr "Push-подписки"
+
+#: application/layouts/partial/sidebar.phtml:52
 msgid "Media"
 msgstr "Медиа"
 
-#: application/layouts/partial/sidebar.phtml:52
+#: application/layouts/partial/sidebar.phtml:61
 msgid "Categories"
 msgstr "Категории"
 
-#: application/layouts/partial/sidebar.phtml:61
+#: application/layouts/partial/sidebar.phtml:70
 msgid "Contact Us"
 msgstr "Свяжитесь с нами"
 
-#: application/layouts/partial/sidebar.phtml:80
+#: application/layouts/partial/sidebar.phtml:89
 msgid "Options"
 msgstr "Настройки"
 
@@ -619,9 +624,10 @@ msgstr "Редактировать"
 
 #: application/modules/acl/views/index.phtml:55
 #: application/modules/acl/views/roles.phtml:24
+#: application/modules/acl/views/user.phtml:32
 #: application/modules/pages/views/crud.phtml:54
-#: application/modules/users/views/change-email.phtml:27
-#: application/modules/users/views/change-password.phtml:27
+#: application/modules/users/views/change-email.phtml:31
+#: application/modules/users/views/change-password.phtml:33
 #: application/modules/users/views/crud.phtml:44
 msgid "Save"
 msgstr "Сохранить"
@@ -629,7 +635,7 @@ msgstr "Сохранить"
 #: application/modules/acl/views/roles.phtml:10
 #: application/modules/acl/views/roles.phtml:25
 #: application/modules/acl/views/user.phtml:11
-#: application/modules/acl/views/user.phtml:31
+#: application/modules/acl/views/user.phtml:33
 #: application/modules/pages/views/crud.phtml:10
 #: application/modules/pages/views/crud.phtml:55
 #: application/modules/users/views/crud.phtml:12
@@ -645,10 +651,6 @@ msgstr "Имя"
 #, php-format
 msgid "Choose roles for %s"
 msgstr "Изменить роль для %s"
-
-#: application/modules/acl/views/user.phtml:30
-msgid "Save changes"
-msgstr "Сохранить изменения"
 
 #: application/modules/cache/views/widgets/index.phtml:4
 #: application/modules/cache/views/widgets/index.phtml:30
@@ -789,30 +791,30 @@ msgstr "Email будет изменён после подтверждения"
 msgid "Email"
 msgstr "Email"
 
-#: application/modules/users/views/change-email.phtml:20
-#: application/modules/users/views/signin.phtml:21
+#: application/modules/users/views/change-email.phtml:22
+#: application/modules/users/views/signin.phtml:25
 msgid "Password"
 msgstr "Пароль"
 
-#: application/modules/users/views/change-email.phtml:24
-#: application/modules/users/views/change-password.phtml:15
+#: application/modules/users/views/change-email.phtml:28
+#: application/modules/users/views/change-password.phtml:17
 msgid "current password"
 msgstr "текущий пароль"
 
 #: application/modules/users/views/change-password.phtml:6
 #: application/modules/users/views/partial/card-header.phtml:38
-#: application/modules/users/views/recovery-reset.phtml:25
+#: application/modules/users/views/recovery-reset.phtml:29
 msgid "Change password"
 msgstr "Изменить пароль"
 
-#: application/modules/users/views/change-password.phtml:20
-#: application/modules/users/views/recovery-reset.phtml:18
+#: application/modules/users/views/change-password.phtml:24
+#: application/modules/users/views/recovery-reset.phtml:20
 msgid "new password"
 msgstr "новый пароль"
 
-#: application/modules/users/views/change-password.phtml:25
-#: application/modules/users/views/recovery-reset.phtml:23
-#: application/modules/users/views/signup.phtml:28
+#: application/modules/users/views/change-password.phtml:31
+#: application/modules/users/views/recovery-reset.phtml:27
+#: application/modules/users/views/signup.phtml:36
 msgid "repeat password"
 msgstr "ещё раз"
 
@@ -823,7 +825,7 @@ msgstr "Редактирование пользователя"
 #: application/modules/users/views/crud.phtml:18
 #: application/modules/users/views/grid.phtml:36
 #: application/modules/users/views/grid.phtml:57
-#: application/modules/users/views/signin.phtml:14
+#: application/modules/users/views/signin.phtml:16
 msgid "Login"
 msgstr "Логин"
 
@@ -879,16 +881,12 @@ msgstr "Сброс пароля"
 msgid "Hi %s, enter your new password"
 msgstr "Привет %s, введите новый пароль"
 
-#: application/modules/users/views/recovery.phtml:8
-msgid "Recovery Password"
-msgstr "Восстановление пароля"
-
-#: application/modules/users/views/recovery.phtml:15
-#: application/modules/users/views/signup.phtml:18
+#: application/modules/users/views/recovery.phtml:17
+#: application/modules/users/views/signup.phtml:22
 msgid "email"
 msgstr "email"
 
-#: application/modules/users/views/recovery.phtml:17
+#: application/modules/users/views/recovery.phtml:19
 msgid "Recovery"
 msgstr "Восстановить"
 
@@ -896,30 +894,30 @@ msgstr "Восстановить"
 msgid "Please sign in"
 msgstr "Пожалуйста авторизируйтесь"
 
-#: application/modules/users/views/signin.phtml:16
-#: application/modules/users/views/signup.phtml:13
+#: application/modules/users/views/signin.phtml:18
+#: application/modules/users/views/signup.phtml:15
 msgid "login"
 msgstr "логин"
 
-#: application/modules/users/views/signin.phtml:22
-#: application/modules/users/views/signup.phtml:23
+#: application/modules/users/views/signin.phtml:26
+#: application/modules/users/views/signup.phtml:29
 msgid "password"
 msgstr "пароль"
 
-#: application/modules/users/views/signin.phtml:28
+#: application/modules/users/views/signin.phtml:32
 msgid "Remember me"
 msgstr "Запомнить меня"
 
-#: application/modules/users/views/signin.phtml:34
+#: application/modules/users/views/signin.phtml:38
 msgid "Sign Up"
 msgstr "Регистрация"
 
-#: application/modules/users/views/signin.phtml:42
+#: application/modules/users/views/signin.phtml:46
 msgid "Forgot your password?"
 msgstr "Забыли пароль?"
 
 #: application/modules/users/views/signup.phtml:6
-#: application/modules/users/views/signup.phtml:32
+#: application/modules/users/views/signup.phtml:40
 msgid "Registration"
 msgstr "Регистрация"
 
@@ -946,6 +944,12 @@ msgstr[2] "%d активных пользователя"
 #: application/modules/users/views/widgets/stats.phtml:22
 msgid "last registered"
 msgstr "последний зарегистрированный"
+
+#~ msgid "Save changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "Recovery Password"
+#~ msgstr "Восстановление пароля"
 
 #~ msgid "Record was created"
 #~ msgstr "Запись создана"

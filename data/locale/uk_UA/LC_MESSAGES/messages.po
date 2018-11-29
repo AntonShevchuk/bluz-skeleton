@@ -1,619 +1,627 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Bluz\n"
 "POT-Creation-Date: 2018-11-29 13:24+0200\n"
-"PO-Revision-Date: 2014-06-03 14:30+0200\n"
-"Last-Translator: Anton Shevchuk <Anton.Shevchuk@gmail.com>\n"
+"PO-Revision-Date: 2018-11-29 13:31+0200\n"
 "Language-Team: \n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
 "X-Poedit-KeywordsList: __;_n:1,2;addError;addNotice;addSuccess\n"
 "X-Poedit-Basepath: ./../..\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Anton Shevchuk <Anton.Shevchuk@gmail.com>\n"
+"Language: uk\n"
 "X-Poedit-SearchPath-0: application\n"
 "X-Poedit-SearchPath-1: ../framework/src\n"
 
 #: ../framework/src/Validator/Rule/AlphaNumericRule.php:40
 msgid "must contain only letters and digits"
-msgstr ""
+msgstr "має містити лише латинські літери та цифри"
 
 #: ../framework/src/Validator/Rule/AlphaNumericRule.php:42
 #, php-format
 msgid "must contain only letters, digits and \"%s\""
-msgstr ""
+msgstr "має містити лише латинські літери, цифри та \"%s\""
 
 #: ../framework/src/Validator/Rule/AlphaRule.php:40
 msgid "must contain only letters"
-msgstr ""
+msgstr "має містити лише букви"
 
 #: ../framework/src/Validator/Rule/AlphaRule.php:42
 #, php-format
 msgid "must contain only letters and \"%s\""
-msgstr ""
+msgstr "має містити лише латинські літери та \"%s\""
 
 #: ../framework/src/Validator/Rule/BetweenInclusiveRule.php:32
 #: ../framework/src/_translator.php:46
 msgid "must be inclusive between \"%1\" and \"%2\""
-msgstr ""
+msgstr "має бути включено до \"%1\" і \"%2\""
 
 #: ../framework/src/Validator/Rule/BetweenRule.php:74
 #: ../framework/src/_translator.php:40
 msgid "must be between \"%1\" and \"%2\""
-msgstr ""
+msgstr "має бути між \"%1\" і \"%2\""
 
 #: ../framework/src/Validator/Rule/ContainsRule.php:63
 #: ../framework/src/_translator.php:52
 #, php-format
 msgid "must contain the value \"%s\""
-msgstr ""
+msgstr "має містити значення \"%s\""
 
 #: ../framework/src/Validator/Rule/DateRule.php:72
 #: ../framework/src/_translator.php:30
 #, php-format
 msgid "must be a valid date. Sample format: \"%s\""
-msgstr ""
+msgstr "має бути припустимою датою. Зразок формату: \" %s\""
 
 #: ../framework/src/Validator/Rule/DateRule.php:74
 #: ../framework/src/_translator.php:29
 msgid "must be a valid date"
-msgstr ""
+msgstr "має бути припустимою датою"
 
 #: ../framework/src/Validator/Rule/EqualsRule.php:54
 #: ../framework/src/_translator.php:41
 #, php-format
 msgid "must be equals \"%s\""
-msgstr ""
+msgstr "має дорівнювати \"%s\""
 
 #: ../framework/src/Validator/Rule/EqualsStrictRule.php:54
 #: ../framework/src/_translator.php:44
 #, php-format
 msgid "must be identical as \"%s\""
-msgstr ""
+msgstr "має бути ідентичним як \"%s\""
 
 #: ../framework/src/Validator/Rule/InRule.php:73
 #: ../framework/src/_translator.php:45
 #, php-format
 msgid "must be in \"%s\""
-msgstr ""
+msgstr "має бути в \"%s\""
 
 #: ../framework/src/Validator/Rule/IpRule.php:75
 #: ../framework/src/_translator.php:39
 #, php-format
 msgid "must be an IP address in the \"%s\" range"
-msgstr ""
+msgstr "має бути ІР-адресою в діапазоні \"%s\""
 
 #: ../framework/src/Validator/Rule/IpRule.php:77
 #: ../framework/src/_translator.php:38
 msgid "must be an IP address"
-msgstr ""
+msgstr "має бути ІР-адресою"
 
 #: ../framework/src/Validator/Rule/LatinNumericRule.php:40
 #: ../framework/src/_translator.php:55
 msgid "must contain only Latin letters and digits"
-msgstr ""
+msgstr "має містити лише латинські літери та цифри"
 
 #: ../framework/src/Validator/Rule/LatinNumericRule.php:42
 #: ../framework/src/_translator.php:56
 #, php-format
 msgid "must contain only Latin letters, digits and \"%s\""
-msgstr ""
+msgstr "має містити лише латинські літери, цифри та \"%s\""
 
 #: ../framework/src/Validator/Rule/LatinRule.php:40
 #: ../framework/src/_translator.php:53
 msgid "must contain only Latin letters"
-msgstr ""
+msgstr "має містити лише латинські літери"
 
 #: ../framework/src/Validator/Rule/LatinRule.php:42
 #: ../framework/src/_translator.php:54
 #, php-format
 msgid "must contain only Latin letters and \"%s\""
-msgstr ""
+msgstr "має містити лише латинські літери та \"%s\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:53
 #: ../framework/src/Validator/Rule/LengthRule.php:59
 #: ../framework/src/_translator.php:23 ../framework/src/_translator.php:24
 #, php-format
 msgid "\"%s\" is not a valid numeric length"
-msgstr ""
+msgstr "\"%s\" не є припустимою довжиною"
 
 #: ../framework/src/Validator/Rule/LengthRule.php:65
 #, php-format
 msgid "\"%s\" cannot be less than \"%s\" for validation"
-msgstr ""
+msgstr "\"%s\" не може бути меншим за \"%s\" для перевірки"
 
 #: ../framework/src/Validator/Rule/LengthRule.php:118
 #: ../framework/src/_translator.php:58
 #, php-format
 msgid "must have a length lower than \"%d\""
-msgstr ""
+msgstr "має бути меншим за \"%d\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:121
 #: ../framework/src/_translator.php:57
 #, php-format
 msgid "must have a length greater than \"%d\""
-msgstr ""
+msgstr "повинна мати довжину більше \"%d\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:124
 #, php-format
 msgid "must have a length \"%d\""
-msgstr ""
+msgstr "має бути довжина \"%d\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:126
 #: ../framework/src/_translator.php:59
 #, php-format
 msgid "must have a length between \"%d\" and \"%d\""
-msgstr ""
+msgstr "має бути довжиною між \"%d\" та \"%d\""
 
 #: ../framework/src/Validator/Rule/LessOrEqualRule.php:32
 #: ../framework/src/_translator.php:47
 #, php-format
 msgid "must be lower than or equals \"%s\""
-msgstr ""
+msgstr "має бути меншим або дорівнювати \"%s\""
 
 #: ../framework/src/Validator/Rule/LessRule.php:54
 #: ../framework/src/_translator.php:48
 #, php-format
 msgid "must be lower than \"%s\""
-msgstr ""
+msgstr "має бути меншим за \"%s\""
 
 #: ../framework/src/Validator/Rule/MoreOrEqualRule.php:32
 #: ../framework/src/_translator.php:42
 #, php-format
 msgid "must be greater than or equals \"%s\""
-msgstr ""
+msgstr "має бути більшим або дорівнювати \"%s\""
 
 #: ../framework/src/Validator/Rule/MoreRule.php:54
 #: ../framework/src/_translator.php:43
 #, php-format
 msgid "must be greater than \"%s\""
-msgstr ""
+msgstr "має бути більшим за \"%s\""
 
 #: ../framework/src/_translator.php:21
 msgid "is invalid"
-msgstr ""
+msgstr "не вірний"
 
 #: ../framework/src/_translator.php:22
 msgid "is required"
-msgstr ""
+msgstr "вимагається"
 
 #: ../framework/src/_translator.php:25
 msgid "must be a float number"
-msgstr ""
+msgstr "має бути плаваючим числом"
 
 #: ../framework/src/_translator.php:26
 msgid "must be a string"
-msgstr ""
+msgstr "має бути рядком"
 
 #: ../framework/src/_translator.php:27
 msgid "must be a valid country code"
-msgstr ""
+msgstr "має бути дійсним кодом країни"
 
 #: ../framework/src/_translator.php:28
 msgid "must be a valid Credit Card number"
-msgstr ""
+msgstr "має бути дійсним номером кредитної картки"
 
 #: ../framework/src/_translator.php:31
 msgid "must be a valid domain"
-msgstr ""
+msgstr "має бути дійсним доменом"
 
 #: ../framework/src/_translator.php:32
 msgid "must be a valid email address"
-msgstr ""
+msgstr "має бути припустимою адресою електронної пошти"
 
 #: ../framework/src/_translator.php:33
 msgid "must be a valid JSON string"
-msgstr ""
+msgstr "має бути припустимим JSON"
 
 #: ../framework/src/_translator.php:34
 msgid "must be a valid slug"
-msgstr ""
+msgstr "повинен бути дійсним slug"
 
 #: ../framework/src/_translator.php:35
 msgid "must be a valid version number"
-msgstr ""
+msgstr "має бути припустимим номером версії"
 
 #: ../framework/src/_translator.php:36
 msgid "must be an array"
-msgstr ""
+msgstr "має бути масивом"
 
 #: ../framework/src/_translator.php:37
 msgid "must be an integer number"
-msgstr ""
+msgstr "має бути цілим числом"
 
 #: ../framework/src/_translator.php:49
 msgid "must be negative"
-msgstr ""
+msgstr "має бути менше нуля"
 
 #: ../framework/src/_translator.php:50
 msgid "must be numeric"
-msgstr ""
+msgstr "має бути числом"
 
 #: ../framework/src/_translator.php:51
 msgid "must be positive"
-msgstr ""
+msgstr "має бути більшим за нуль"
 
 #: ../framework/src/_translator.php:60
 msgid "must not be empty"
-msgstr ""
+msgstr "не має бути пустим"
 
 #: ../framework/src/_translator.php:61
 msgid "must not contain whitespace"
-msgstr ""
+msgstr "не має містити пробіли"
 
 #: ../framework/src/_translator.php:62
 msgid "must validate with regular expression rule"
-msgstr ""
+msgstr "потрібно перевірити за правилом"
 
 #: application/layouts/helpers/Username.php:28
 msgid "Guest"
-msgstr ""
+msgstr "Гість"
 
 #: application/library/Application/Bootstrap.php:86
 #: application/modules/error/controllers/index.php:83
 msgid "You don't have permissions, please sign in"
-msgstr ""
+msgstr "У вас немає дозволу, будь ласка, увійдіть"
 
 #: application/models/Pages/Row.php:79
 msgid "This alias already exists"
-msgstr ""
+msgstr "Цей псевдонім вже існує"
 
 #: application/models/Pages/Row.php:89
 msgid "Content can't be empty"
-msgstr ""
+msgstr "Зміст не може бути пустим"
 
 #: application/models/Users/Mail.php:43
 msgid "Activation"
-msgstr ""
+msgstr "Активація"
 
 #: application/models/Users/Mail.php:105
 #: application/modules/users/views/recovery.phtml:8
 msgid "Password Recovery"
-msgstr ""
+msgstr "Відновити пароль"
 
 #: application/models/Users/Mail.php:167
 #: application/modules/users/views/change-email.phtml:6
 #: application/modules/users/views/partial/card-header.phtml:31
 msgid "Change email"
-msgstr ""
+msgstr "Змінити e-mail"
 
 #: application/modules/acl/controllers/index.php:28
 #: application/layouts/partial/sidebar.phtml:81
 msgid "Permissions"
-msgstr ""
+msgstr "Права"
 
 #: application/modules/acl/controllers/save.php:48
 msgid "Privileges set is empty. You can't remove all of them"
-msgstr ""
+msgstr "Набір привілеїв пуст. Не можна видалити всі з них"
 
 #: application/modules/acl/controllers/save.php:53
 msgid "All data was saved"
-msgstr ""
+msgstr "Всі дані збережено"
 
 #: application/modules/acl/controllers/save.php:55
 #: application/modules/error/controllers/index.php:100
 #: application/modules/error/controllers/index.php:113
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Внутрішня помилка сервера"
 
 #: application/modules/acl/controllers/user.php:57
 msgid "User roles was updated"
-msgstr ""
+msgstr "Ролі користувачів було оновлено"
 
 #: application/modules/cache/controllers/clean.php:33
 msgid "Cache with tag `system` cleaned"
-msgstr ""
+msgstr "Кеш з тегом 'система' очищено"
 
 #: application/modules/cache/controllers/clean.php:35
 #: application/modules/cache/controllers/flush.php:35
 #: application/modules/cache/views/widgets/index.phtml:32
 msgid "Cache is disabled"
-msgstr ""
+msgstr "Кеш вимкнуто"
 
 #: application/modules/cache/controllers/flush.php:33
 msgid "Cache cleared"
-msgstr ""
+msgstr "Кеш очищен"
 
 #: application/modules/dashboard/controllers/index.php:30
 msgid "Dashboard"
-msgstr ""
+msgstr "Консоль"
 
 #: application/modules/error/controllers/index.php:71
 msgid "Bad Request"
-msgstr ""
+msgstr "Помилковий запит"
 
 #: application/modules/error/controllers/index.php:72
 msgid "The server didn't understand the syntax of the request"
-msgstr ""
+msgstr "Сервер не зрозумів синтаксис запиту"
 
 #: application/modules/error/controllers/index.php:75
 msgid "Unauthorized"
-msgstr ""
+msgstr "Не авторизован"
 
 #: application/modules/error/controllers/index.php:76
 msgid "You are not authorized to view this page, please sign in"
-msgstr ""
+msgstr "Ви не маєте дозволу для перегляду цього запису"
 
 #: application/modules/error/controllers/index.php:79
 msgid "Forbidden"
-msgstr ""
+msgstr "Заборонено"
 
 #: application/modules/error/controllers/index.php:81
 msgid "You don't have permissions to access this page"
-msgstr ""
+msgstr "У вас немає дозволів на доступ до цієї сторінки"
 
 #: application/modules/error/controllers/index.php:87
 msgid "Not Found"
-msgstr ""
+msgstr "Не знайдено"
 
 #: application/modules/error/controllers/index.php:88
 msgid "The page you requested was not found"
-msgstr ""
+msgstr "Запитана сторінка не знайдена"
 
 #: application/modules/error/controllers/index.php:91
 msgid "Method Not Allowed"
-msgstr ""
+msgstr "Метод не допускається"
 
 #: application/modules/error/controllers/index.php:92
 #, php-format
 msgid "The server is not support method `%s`"
-msgstr ""
+msgstr "Сервер не підтримує метод %s"
 
 #: application/modules/error/controllers/index.php:96
 msgid "Not Acceptable"
-msgstr ""
+msgstr "Не прийнятна"
 
 #: application/modules/error/controllers/index.php:97
 msgid ""
 "The server is not acceptable generating content type described at `Accept` "
 "header"
-msgstr ""
+msgstr "Сервер не прийняв вміст, який описан в заголовку Accept"
 
 #: application/modules/error/controllers/index.php:101
 msgid "The server encountered an unexpected condition"
-msgstr ""
+msgstr "Сервер виявив несподівану умову"
 
 #: application/modules/error/controllers/index.php:104
 msgid "Not Implemented"
-msgstr ""
+msgstr "Не реалізовано"
 
 #: application/modules/error/controllers/index.php:105
 msgid "The server does not understand or does not support the HTTP method"
-msgstr ""
+msgstr "Сервер не підтримує цю можливість"
 
 #: application/modules/error/controllers/index.php:108
 msgid "Service Unavailable"
-msgstr ""
+msgstr "Служба недоступна"
 
 #: application/modules/error/controllers/index.php:109
 msgid ""
 "The server is currently unable to handle the request due to a temporary "
 "overloading"
 msgstr ""
+"Сервер в даний час не в змозі обробити запит через тимчасові перевантаження"
 
 #: application/modules/error/controllers/index.php:114
 msgid "An unexpected error occurred with your request. Please try again later"
-msgstr ""
+msgstr "Стався несподіваний збій. Спробуйте ще раз пізніше"
 
 #: application/modules/pages/controllers/grid.php:27
 #: application/layouts/partial/sidebar.phtml:44
 msgid "Pages"
-msgstr ""
+msgstr "Сторінки"
 
 #: application/modules/system/controllers/bookmarks.php:29
 msgid "Bookmarklets"
-msgstr ""
+msgstr "Закладки"
 
 #: application/modules/system/controllers/crud/delete.php:36
 msgid "The record was successfully destroyed"
-msgstr ""
+msgstr "Запис був успішно зруйнований"
 
 #: application/modules/system/controllers/crud/post.php:34
 msgid "The record was successfully created"
-msgstr ""
+msgstr "Цей запис було успішно створено"
 
 #: application/modules/system/controllers/crud/put.php:38
 msgid "The record was successfully updated"
-msgstr ""
+msgstr "Цей запис був успішно оновлений"
 
 #: application/modules/system/controllers/index.php:22
 #: application/layouts/partial/sidebar.phtml:97
 msgid "System"
-msgstr ""
+msgstr "Система"
 
 #: application/modules/system/controllers/info.php:29
 #: application/modules/system/views/index.phtml:9
 msgid "PHP Info"
-msgstr ""
+msgstr "PHP Info"
 
 #: application/modules/system/controllers/routers.php:29
 #: application/modules/system/views/index.phtml:8
 msgid "Routers Map"
-msgstr ""
+msgstr "Маршрутизація"
 
 #: application/modules/users/controllers/activation.php:35
 #: application/modules/users/controllers/activation.php:45
 msgid "Invalid activation code"
-msgstr ""
+msgstr "Недійсний код активації"
 
 #: application/modules/users/controllers/activation.php:47
 #: application/modules/users/controllers/recovery-reset.php:43
 msgid "The activation code has expired"
-msgstr ""
+msgstr "Код активації минув"
 
 #: application/modules/users/controllers/activation.php:68
 msgid ""
 "Your Account has been successfully activated. <br/>You can now log in using "
 "the username and password you chose during the registration."
 msgstr ""
+"Ваш обліковий запис успішно активували.<br>Ви можете тепер увійти в систему "
+"за допомогою ім'я користувача і пароля, які ви обрали під час реєстрації."
 
 #: application/modules/users/controllers/change-email.php:63
 msgid "Check your email and follow instructions in letter"
-msgstr ""
+msgstr "Будь ласка, перевірте свою електронну пошту"
 
 #: application/modules/users/controllers/change-email.php:65
 #: application/modules/users/controllers/crud/post.php:74
 #: application/modules/users/controllers/recovery.php:55
 msgid "Unable to send email. Please contact administrator"
-msgstr ""
+msgstr "Не вдається надіслати лист. Зверніться до адміністратора"
 
 #: application/modules/users/controllers/change-email.php:92
 msgid "Email was updated"
-msgstr ""
+msgstr "Email оновлено"
 
 #: application/modules/users/controllers/change-password.php:66
 msgid "The password was updated successfully"
-msgstr ""
+msgstr "Пароль успішно оновлено"
 
 #: application/modules/users/controllers/crud/post.php:42
 msgid "Password can't be empty"
-msgstr ""
+msgstr "Пароль не може бути пустим"
 
 #: application/modules/users/controllers/crud/post.php:48
 msgid "Password is not equal"
-msgstr ""
+msgstr "Пароль не співпада"
 
 #: application/modules/users/controllers/crud/post.php:68
 msgid ""
 "Your account has been created and an activation link has been sent to the e-"
 "mail address you entered.<br/>Note that you must activate the account by "
-"clicking on the activation link when you get the e-mail before you can "
-"login."
+"clicking on the activation link when you get the e-mail before you can login."
 msgstr ""
+"Ваш обліковий запис був створений і на ваш email було відправлено листа с "
+"посиланням для активації акаунта."
 
 #: application/modules/users/controllers/grid.php:29
 #: application/layouts/partial/sidebar.phtml:7
 #: application/modules/users/views/widgets/stats.phtml:5
 msgid "Users"
-msgstr ""
+msgstr "Користувачі"
 
 #: application/modules/users/controllers/recovery-reset.php:40
 msgid "Invalid code"
-msgstr ""
+msgstr "Невірний код"
 
 #: application/modules/users/controllers/recovery-reset.php:67
 msgid "Your password has been updated"
-msgstr ""
+msgstr "Ваш пароль було оновлено"
 
 #: application/modules/users/controllers/recovery.php:53
 msgid "Reset password instructions has been sent to your email address"
 msgstr ""
+"Інструкції щодо скидання пароля були надіслані на вашу адресу електронної "
+"пошти"
 
 #: application/modules/users/controllers/signin.php:37
 msgid "Already signed"
-msgstr ""
+msgstr "Вже зайшли"
 
 #: application/modules/users/controllers/signin.php:57
 msgid "You are signed"
-msgstr ""
+msgstr "Ви зайшли"
 
 #: application/modules/users/controllers/signout.php:30
 msgid "You are signout"
-msgstr ""
+msgstr "Ви вийшли"
 
 #: application/layouts/partial/breadcrumbs.phtml:4
 msgid "Back to homepage"
-msgstr ""
+msgstr "Перейти на головну"
 
 #: application/layouts/partial/breadcrumbs.phtml:6
 msgid "Home"
-msgstr ""
+msgstr "Головна"
 
 #: application/layouts/partial/grid/limit.phtml:9
 #: application/layouts/partial/grid/limit.phtml:11
 msgid "Limit"
-msgstr ""
+msgstr "Ліміт"
 
 #: application/layouts/partial/grid/pagination.phtml:10
 msgid "Pagination"
-msgstr ""
+msgstr "Нумерація сторінок"
 
 #: application/layouts/partial/grid/total.phtml:9
 #: application/layouts/partial/grid/total.phtml:12
 msgid "Total"
-msgstr ""
+msgstr "Всього"
 
 #: application/layouts/partial/grid/total.phtml:13
 msgid "record"
 msgid_plural "records"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "запис"
+msgstr[1] "записа"
+msgstr[2] "записів"
 
 #: application/layouts/partial/grid/total.phtml:14
 #, php-format
 msgid "on %s page"
 msgid_plural "on %s pages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "на сторінці %s"
+msgstr[1] "на сторінці %s"
+msgstr[2] "на сторінці %s"
 
 #: application/layouts/partial/navbar.phtml:9
 msgid "Bluz"
-msgstr ""
+msgstr "Bluz"
 
 #: application/layouts/partial/navbar.phtml:53
 #, php-format
 msgid "Logged in as %s"
-msgstr ""
+msgstr "Ви увійшли як %s"
 
 #: application/layouts/partial/navbar.phtml:54
 msgid "Sign Out"
-msgstr ""
+msgstr "Вийти"
 
 #: application/layouts/partial/navbar.phtml:56
 #: application/modules/users/views/signin.phtml:36
 msgid "Sign In"
-msgstr ""
+msgstr "Увійти"
 
 #: application/layouts/partial/sidebar.phtml:15
 msgid "Wallets"
-msgstr ""
+msgstr "Гаманці"
 
 #: application/layouts/partial/sidebar.phtml:24
 msgid "Phones"
-msgstr ""
+msgstr "Телефони"
 
 #: application/layouts/partial/sidebar.phtml:33
 msgid "Push Subscriptions"
-msgstr ""
+msgstr "Push підписки"
 
 #: application/layouts/partial/sidebar.phtml:52
 msgid "Media"
-msgstr ""
+msgstr "Медіа"
 
 #: application/layouts/partial/sidebar.phtml:61
 msgid "Categories"
-msgstr ""
+msgstr "Категорії"
 
 #: application/layouts/partial/sidebar.phtml:70
 msgid "Contact Us"
-msgstr ""
+msgstr "Зв'яжіться з нами"
 
 #: application/layouts/partial/sidebar.phtml:89
 msgid "Options"
-msgstr ""
+msgstr "Параметри"
 
 #: application/modules/acl/views/index.phtml:4
 #: application/modules/acl/views/roles.phtml:8
 msgid "Create role"
-msgstr ""
+msgstr "Створити роль"
 
 #: application/modules/acl/views/index.phtml:11
 msgid "Privilege/Role"
-msgstr ""
+msgstr "Привілей/роль"
 
 #: application/modules/acl/views/index.phtml:22
 #: application/modules/acl/views/roles.phtml:8
 msgid "Edit role"
-msgstr ""
+msgstr "Змінити роль"
 
 #: application/modules/acl/views/index.phtml:22
 #: application/modules/users/views/widgets/card.phtml:22
 msgid "Edit"
-msgstr ""
+msgstr "Редагувати"
 
 #: application/modules/acl/views/index.phtml:55
 #: application/modules/acl/views/roles.phtml:24
@@ -623,7 +631,7 @@ msgstr ""
 #: application/modules/users/views/change-password.phtml:33
 #: application/modules/users/views/crud.phtml:44
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: application/modules/acl/views/roles.phtml:10
 #: application/modules/acl/views/roles.phtml:25
@@ -634,134 +642,134 @@ msgstr ""
 #: application/modules/users/views/crud.phtml:12
 #: application/modules/users/views/crud.phtml:45
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: application/modules/acl/views/roles.phtml:16
 msgid "Name"
-msgstr ""
+msgstr "Ім'я"
 
 #: application/modules/acl/views/user.phtml:10
 #, php-format
 msgid "Choose roles for %s"
-msgstr ""
+msgstr "Виберіть ролі для %s"
 
 #: application/modules/cache/views/widgets/index.phtml:4
 #: application/modules/cache/views/widgets/index.phtml:30
 msgid "Cache"
-msgstr ""
+msgstr "Кеш"
 
 #: application/modules/cache/views/widgets/index.phtml:6
 msgid "Cache is enabled"
-msgstr ""
+msgstr "Кеш увімкнено"
 
 #: application/modules/cache/views/widgets/index.phtml:7
 #, php-format
 msgid "Current cache adapter is %s"
-msgstr ""
+msgstr "Поточний кеш адаптер є %s"
 
 #: application/modules/cache/views/widgets/index.phtml:13
 msgid "Clean system data"
-msgstr ""
+msgstr "Очистити системні дані"
 
 #: application/modules/cache/views/widgets/index.phtml:20
 msgid "Clean all data"
-msgstr ""
+msgstr "Очистити всі дані"
 
 #: application/modules/cache/views/widgets/index.phtml:34
 msgid "Read manual for more information"
-msgstr ""
+msgstr "Читання керівництво для отримання додаткової інформації"
 
 #: application/modules/index/views/index.phtml:60
 msgid "sign in"
-msgstr ""
+msgstr "увійти"
 
 #: application/modules/pages/views/crud.phtml:9
 msgid "Edit page"
-msgstr ""
+msgstr "Редагувати сторінку"
 
 #: application/modules/pages/views/crud.phtml:16
 #: application/modules/pages/views/grid.phtml:29
 #: application/modules/pages/views/grid.phtml:53
 msgid "Title"
-msgstr ""
+msgstr "Назва"
 
 #: application/modules/pages/views/crud.phtml:22
 #: application/modules/pages/views/grid.phtml:30
 msgid "Alias"
-msgstr ""
+msgstr "Псевдонім"
 
 #: application/modules/pages/views/crud.phtml:25
 msgid "Alias for build permalink to this page"
-msgstr ""
+msgstr "Псевдонім для побудувати посилання на цю сторінку"
 
 #: application/modules/pages/views/crud.phtml:30
 #: application/modules/pages/views/grid.phtml:32
 msgid "Content"
-msgstr ""
+msgstr "Вміст"
 
 #: application/modules/pages/views/crud.phtml:38
 msgid "Meta information about page"
-msgstr ""
+msgstr "Мета-інформації про сторінку"
 
 #: application/modules/pages/views/crud.phtml:40
 msgid "Keywords"
-msgstr ""
+msgstr "Ключові слова"
 
 #: application/modules/pages/views/crud.phtml:46
 #: application/modules/pages/views/grid.phtml:31
 #: application/modules/pages/views/grid.phtml:54
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 #: application/modules/pages/views/grid.phtml:19
 msgid "Create"
-msgstr ""
+msgstr "Створити"
 
 #: application/modules/pages/views/grid.phtml:38
 #: application/modules/users/views/grid.phtml:43
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: application/modules/pages/views/grid.phtml:52
 #: application/modules/users/views/grid.phtml:56
 msgid "Id"
-msgstr ""
+msgstr "Id"
 
 #: application/modules/pages/views/grid.phtml:55
 msgid "Created"
-msgstr ""
+msgstr "Створено"
 
 #: application/modules/pages/views/grid.phtml:56
 msgid "Updated"
-msgstr ""
+msgstr "Оновлено"
 
 #: application/modules/system/views/bookmarks.phtml:33
 msgid "Example"
-msgstr ""
+msgstr "Приклад"
 
 #: application/modules/system/views/index.phtml:4
 msgid "Swagger documented API"
-msgstr ""
+msgstr "Swagger documented API"
 
 #: application/modules/system/views/index.phtml:7
 msgid "Bookmarklets generator"
-msgstr ""
+msgstr "Аплети-закладки"
 
 #: application/modules/system/views/routers.phtml:6
 msgid "Module"
-msgstr ""
+msgstr "Модуль"
 
 #: application/modules/system/views/routers.phtml:7
 msgid "Controller"
-msgstr ""
+msgstr "Контролер"
 
 #: application/modules/system/views/routers.phtml:8
 msgid "Route"
-msgstr ""
+msgstr "Маршрут"
 
 #: application/modules/system/views/widgets/load.phtml:21
 msgid "Load average"
-msgstr ""
+msgstr "Середнє навантаження"
 
 #: application/modules/system/views/widgets/load.phtml:25
 #: application/modules/system/views/widgets/load.phtml:29
@@ -769,168 +777,171 @@ msgstr ""
 #, php-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d хвилина"
+msgstr[1] "%d хвилини"
+msgstr[2] "%d хвилин"
 
 #: application/modules/users/views/change-email.phtml:7
 msgid "Email will be changed after confirmation"
-msgstr ""
+msgstr "Електронна пошта буде змінена після підтвердження"
 
 #: application/modules/users/views/change-email.phtml:12
 #: application/modules/users/views/crud.phtml:24
 #: application/modules/users/views/grid.phtml:37
 #: application/modules/users/views/grid.phtml:58
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: application/modules/users/views/change-email.phtml:22
 #: application/modules/users/views/signin.phtml:25
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: application/modules/users/views/change-email.phtml:28
 #: application/modules/users/views/change-password.phtml:17
 msgid "current password"
-msgstr ""
+msgstr "поточний пароль"
 
 #: application/modules/users/views/change-password.phtml:6
 #: application/modules/users/views/partial/card-header.phtml:38
 #: application/modules/users/views/recovery-reset.phtml:29
 msgid "Change password"
-msgstr ""
+msgstr "Змінити пароль"
 
 #: application/modules/users/views/change-password.phtml:24
 #: application/modules/users/views/recovery-reset.phtml:20
 msgid "new password"
-msgstr ""
+msgstr "новий пароль"
 
 #: application/modules/users/views/change-password.phtml:31
 #: application/modules/users/views/recovery-reset.phtml:27
 #: application/modules/users/views/signup.phtml:36
 msgid "repeat password"
-msgstr ""
+msgstr "повторіть пароль"
 
 #: application/modules/users/views/crud.phtml:11
 msgid "Edit user"
-msgstr ""
+msgstr "Редагувати користувача"
 
 #: application/modules/users/views/crud.phtml:18
 #: application/modules/users/views/grid.phtml:36
 #: application/modules/users/views/grid.phtml:57
 #: application/modules/users/views/signin.phtml:16
 msgid "Login"
-msgstr ""
+msgstr "Вхід"
 
 #: application/modules/users/views/crud.phtml:28
 msgid "email is required, and it should has valid format"
-msgstr ""
+msgstr "email є обов'язковим, і він повинен мати припустимий формат"
 
 #: application/modules/users/views/crud.phtml:32
 #: application/modules/users/views/grid.phtml:60
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 #: application/modules/users/views/grid.phtml:19
 msgid "all"
-msgstr ""
+msgstr "всі"
 
 #: application/modules/users/views/grid.phtml:59
 #: application/modules/users/views/widgets/card.phtml:26
 msgid "Roles"
-msgstr ""
+msgstr "Ролі"
 
 #: application/modules/users/views/partial/card-header.phtml:5
 #: application/modules/users/views/widgets/card.phtml:18
 msgid "Profile"
-msgstr ""
+msgstr "Профіль"
 
 #: application/modules/users/views/partial/card-header.phtml:14
 msgid "Change profile"
-msgstr ""
+msgstr "Змінити профіль"
 
 #: application/modules/users/views/partial/card-header.phtml:23
 msgid "Change avatar"
-msgstr ""
+msgstr "Змінити аватар"
 
 #: application/modules/users/views/partial/card-header.phtml:47
 msgid "Wallet"
-msgstr ""
+msgstr "Гаманець"
 
 #: application/modules/users/views/profile.phtml:24
 msgid "Account status"
-msgstr ""
+msgstr "Статус облікового запису"
 
 #: application/modules/users/views/profile.phtml:26
 msgid "Linking to social networks"
-msgstr ""
+msgstr "Соціальні мережі"
 
 #: application/modules/users/views/recovery-reset.phtml:8
 msgid "Reset Password"
-msgstr ""
+msgstr "Скинути пароль"
 
 #: application/modules/users/views/recovery-reset.phtml:11
 #, php-format
 msgid "Hi %s, enter your new password"
-msgstr ""
+msgstr "Привіт %s, введіть новий пароль"
 
 #: application/modules/users/views/recovery.phtml:17
 #: application/modules/users/views/signup.phtml:22
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: application/modules/users/views/recovery.phtml:19
 msgid "Recovery"
-msgstr ""
+msgstr "Відновлення"
 
 #: application/modules/users/views/signin.phtml:8
 msgid "Please sign in"
-msgstr ""
+msgstr "Увійдіть до системи"
 
 #: application/modules/users/views/signin.phtml:18
 #: application/modules/users/views/signup.phtml:15
 msgid "login"
-msgstr ""
+msgstr "логін"
 
 #: application/modules/users/views/signin.phtml:26
 #: application/modules/users/views/signup.phtml:29
 msgid "password"
-msgstr ""
+msgstr "пароль"
 
 #: application/modules/users/views/signin.phtml:32
 msgid "Remember me"
-msgstr ""
+msgstr "Запам'ятати мене"
 
 #: application/modules/users/views/signin.phtml:38
 msgid "Sign Up"
-msgstr ""
+msgstr "Реєстрація"
 
 #: application/modules/users/views/signin.phtml:46
 msgid "Forgot your password?"
-msgstr ""
+msgstr "Забули свій пароль?"
 
 #: application/modules/users/views/signup.phtml:6
 #: application/modules/users/views/signup.phtml:40
 msgid "Registration"
-msgstr ""
+msgstr "Реєстрація"
 
 #: application/modules/users/views/widgets/card.phtml:2
 msgid "User profile"
-msgstr ""
+msgstr "Профіль користувача"
 
 #: application/modules/users/views/widgets/stats.phtml:10
 #, php-format
 msgid "%d registered user"
 msgid_plural "%d registered users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "зареєстрован %d користувач"
+msgstr[1] "зареєстровано %d користувача"
+msgstr[2] "зареєстровано %d користувачів"
 
 #: application/modules/users/views/widgets/stats.phtml:16
 #, php-format
 msgid "%d active user"
 msgid_plural "%d active users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "активно %d користувач"
+msgstr[1] "активно %d користувача"
+msgstr[2] "активно %d користувачів"
 
 #: application/modules/users/views/widgets/stats.phtml:22
 msgid "last registered"
-msgstr ""
+msgstr "останній зареєстрований"
