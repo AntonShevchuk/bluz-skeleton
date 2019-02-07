@@ -1,0 +1,8 @@
+<?php
+/**
+* @var \Bluz\View\View $this
+*/
+?>
+<h2><?=__('This is the queues test page')?></h2>
+<a href="<?=$this->url('system', 'queues', ['produce' => 1])?>" class="btn btn-primary" data-ajax><?=__('Produce')?></a>
+<a href="<?=$this->url('system', 'queues', ['consume' => 1])?>" class="btn btn-info" data-ajax><?=__('Consume')?></a>

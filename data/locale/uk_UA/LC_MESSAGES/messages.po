@@ -1,118 +1,104 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bluz\n"
-"POT-Creation-Date: 2018-11-29 13:24+0200\n"
-"PO-Revision-Date: 2018-11-29 13:31+0200\n"
+"POT-Creation-Date: 2019-02-07 16:55+0200\n"
+"PO-Revision-Date: 2019-02-07 16:56+0200\n"
+"Last-Translator: Anton Shevchuk <Anton.Shevchuk@gmail.com>\n"
 "Language-Team: \n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-KeywordsList: __;_n:1,2;addError;addNotice;addSuccess\n"
 "X-Poedit-Basepath: ./../..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Last-Translator: Anton Shevchuk <Anton.Shevchuk@gmail.com>\n"
-"Language: uk\n"
 "X-Poedit-SearchPath-0: application\n"
 "X-Poedit-SearchPath-1: ../framework/src\n"
 
 #: ../framework/src/Validator/Rule/AlphaNumericRule.php:40
-msgid "must contain only letters and digits"
+#: ../framework/src/Validator/Rule/LatinNumericRule.php:40
+#: ../framework/src/_translator.php:56
+msgid "must contain only Latin letters and digits"
 msgstr "має містити лише латинські літери та цифри"
 
 #: ../framework/src/Validator/Rule/AlphaNumericRule.php:42
+#: ../framework/src/Validator/Rule/LatinNumericRule.php:42
+#: ../framework/src/_translator.php:57
 #, php-format
-msgid "must contain only letters, digits and \"%s\""
+msgid "must contain only Latin letters, digits and \"%s\""
 msgstr "має містити лише латинські літери, цифри та \"%s\""
 
 #: ../framework/src/Validator/Rule/AlphaRule.php:40
-msgid "must contain only letters"
-msgstr "має містити лише букви"
+#: ../framework/src/Validator/Rule/LatinRule.php:40
+#: ../framework/src/_translator.php:54
+msgid "must contain only Latin letters"
+msgstr "має містити лише латинські літери"
 
 #: ../framework/src/Validator/Rule/AlphaRule.php:42
+#: ../framework/src/Validator/Rule/LatinRule.php:42
+#: ../framework/src/_translator.php:55
 #, php-format
-msgid "must contain only letters and \"%s\""
+msgid "must contain only Latin letters and \"%s\""
 msgstr "має містити лише латинські літери та \"%s\""
 
 #: ../framework/src/Validator/Rule/BetweenInclusiveRule.php:32
-#: ../framework/src/_translator.php:46
+#: ../framework/src/_translator.php:47
 msgid "must be inclusive between \"%1\" and \"%2\""
 msgstr "має бути включено до \"%1\" і \"%2\""
 
 #: ../framework/src/Validator/Rule/BetweenRule.php:74
-#: ../framework/src/_translator.php:40
+#: ../framework/src/_translator.php:41
 msgid "must be between \"%1\" and \"%2\""
 msgstr "має бути між \"%1\" і \"%2\""
 
 #: ../framework/src/Validator/Rule/ContainsRule.php:63
-#: ../framework/src/_translator.php:52
+#: ../framework/src/_translator.php:53
 #, php-format
 msgid "must contain the value \"%s\""
 msgstr "має містити значення \"%s\""
 
 #: ../framework/src/Validator/Rule/DateRule.php:72
-#: ../framework/src/_translator.php:30
+#: ../framework/src/_translator.php:31
 #, php-format
 msgid "must be a valid date. Sample format: \"%s\""
 msgstr "має бути припустимою датою. Зразок формату: \" %s\""
 
 #: ../framework/src/Validator/Rule/DateRule.php:74
-#: ../framework/src/_translator.php:29
+#: ../framework/src/_translator.php:30
 msgid "must be a valid date"
 msgstr "має бути припустимою датою"
 
 #: ../framework/src/Validator/Rule/EqualsRule.php:54
-#: ../framework/src/_translator.php:41
+#: ../framework/src/_translator.php:42
 #, php-format
 msgid "must be equals \"%s\""
 msgstr "має дорівнювати \"%s\""
 
 #: ../framework/src/Validator/Rule/EqualsStrictRule.php:54
-#: ../framework/src/_translator.php:44
+#: ../framework/src/_translator.php:45
 #, php-format
 msgid "must be identical as \"%s\""
 msgstr "має бути ідентичним як \"%s\""
 
 #: ../framework/src/Validator/Rule/InRule.php:73
-#: ../framework/src/_translator.php:45
+#: ../framework/src/_translator.php:46
 #, php-format
 msgid "must be in \"%s\""
 msgstr "має бути в \"%s\""
 
 #: ../framework/src/Validator/Rule/IpRule.php:75
-#: ../framework/src/_translator.php:39
+#: ../framework/src/_translator.php:40
 #, php-format
 msgid "must be an IP address in the \"%s\" range"
 msgstr "має бути ІР-адресою в діапазоні \"%s\""
 
 #: ../framework/src/Validator/Rule/IpRule.php:77
-#: ../framework/src/_translator.php:38
+#: ../framework/src/_translator.php:39
 msgid "must be an IP address"
 msgstr "має бути ІР-адресою"
-
-#: ../framework/src/Validator/Rule/LatinNumericRule.php:40
-#: ../framework/src/_translator.php:55
-msgid "must contain only Latin letters and digits"
-msgstr "має містити лише латинські літери та цифри"
-
-#: ../framework/src/Validator/Rule/LatinNumericRule.php:42
-#: ../framework/src/_translator.php:56
-#, php-format
-msgid "must contain only Latin letters, digits and \"%s\""
-msgstr "має містити лише латинські літери, цифри та \"%s\""
-
-#: ../framework/src/Validator/Rule/LatinRule.php:40
-#: ../framework/src/_translator.php:53
-msgid "must contain only Latin letters"
-msgstr "має містити лише латинські літери"
-
-#: ../framework/src/Validator/Rule/LatinRule.php:42
-#: ../framework/src/_translator.php:54
-#, php-format
-msgid "must contain only Latin letters and \"%s\""
-msgstr "має містити лише латинські літери та \"%s\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:53
 #: ../framework/src/Validator/Rule/LengthRule.php:59
@@ -122,53 +108,55 @@ msgid "\"%s\" is not a valid numeric length"
 msgstr "\"%s\" не є припустимою довжиною"
 
 #: ../framework/src/Validator/Rule/LengthRule.php:65
+#: ../framework/src/_translator.php:25
 #, php-format
 msgid "\"%s\" cannot be less than \"%s\" for validation"
 msgstr "\"%s\" не може бути меншим за \"%s\" для перевірки"
 
 #: ../framework/src/Validator/Rule/LengthRule.php:118
-#: ../framework/src/_translator.php:58
+#: ../framework/src/_translator.php:60
 #, php-format
 msgid "must have a length lower than \"%d\""
 msgstr "має бути меншим за \"%d\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:121
-#: ../framework/src/_translator.php:57
+#: ../framework/src/_translator.php:59
 #, php-format
 msgid "must have a length greater than \"%d\""
 msgstr "повинна мати довжину більше \"%d\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:124
+#: ../framework/src/_translator.php:58
 #, php-format
 msgid "must have a length \"%d\""
 msgstr "має бути довжина \"%d\""
 
 #: ../framework/src/Validator/Rule/LengthRule.php:126
-#: ../framework/src/_translator.php:59
+#: ../framework/src/_translator.php:61
 #, php-format
 msgid "must have a length between \"%d\" and \"%d\""
 msgstr "має бути довжиною між \"%d\" та \"%d\""
 
 #: ../framework/src/Validator/Rule/LessOrEqualRule.php:32
-#: ../framework/src/_translator.php:47
+#: ../framework/src/_translator.php:48
 #, php-format
 msgid "must be lower than or equals \"%s\""
 msgstr "має бути меншим або дорівнювати \"%s\""
 
 #: ../framework/src/Validator/Rule/LessRule.php:54
-#: ../framework/src/_translator.php:48
+#: ../framework/src/_translator.php:49
 #, php-format
 msgid "must be lower than \"%s\""
 msgstr "має бути меншим за \"%s\""
 
 #: ../framework/src/Validator/Rule/MoreOrEqualRule.php:32
-#: ../framework/src/_translator.php:42
+#: ../framework/src/_translator.php:43
 #, php-format
 msgid "must be greater than or equals \"%s\""
 msgstr "має бути більшим або дорівнювати \"%s\""
 
 #: ../framework/src/Validator/Rule/MoreRule.php:54
-#: ../framework/src/_translator.php:43
+#: ../framework/src/_translator.php:44
 #, php-format
 msgid "must be greater than \"%s\""
 msgstr "має бути більшим за \"%s\""
@@ -181,71 +169,71 @@ msgstr "не вірний"
 msgid "is required"
 msgstr "вимагається"
 
-#: ../framework/src/_translator.php:25
+#: ../framework/src/_translator.php:26
 msgid "must be a float number"
 msgstr "має бути плаваючим числом"
 
-#: ../framework/src/_translator.php:26
+#: ../framework/src/_translator.php:27
 msgid "must be a string"
 msgstr "має бути рядком"
 
-#: ../framework/src/_translator.php:27
+#: ../framework/src/_translator.php:28
 msgid "must be a valid country code"
 msgstr "має бути дійсним кодом країни"
 
-#: ../framework/src/_translator.php:28
+#: ../framework/src/_translator.php:29
 msgid "must be a valid Credit Card number"
 msgstr "має бути дійсним номером кредитної картки"
 
-#: ../framework/src/_translator.php:31
+#: ../framework/src/_translator.php:32
 msgid "must be a valid domain"
 msgstr "має бути дійсним доменом"
 
-#: ../framework/src/_translator.php:32
+#: ../framework/src/_translator.php:33
 msgid "must be a valid email address"
 msgstr "має бути припустимою адресою електронної пошти"
 
-#: ../framework/src/_translator.php:33
+#: ../framework/src/_translator.php:34
 msgid "must be a valid JSON string"
 msgstr "має бути припустимим JSON"
 
-#: ../framework/src/_translator.php:34
+#: ../framework/src/_translator.php:35
 msgid "must be a valid slug"
 msgstr "повинен бути дійсним slug"
 
-#: ../framework/src/_translator.php:35
+#: ../framework/src/_translator.php:36
 msgid "must be a valid version number"
 msgstr "має бути припустимим номером версії"
 
-#: ../framework/src/_translator.php:36
+#: ../framework/src/_translator.php:37
 msgid "must be an array"
 msgstr "має бути масивом"
 
-#: ../framework/src/_translator.php:37
+#: ../framework/src/_translator.php:38
 msgid "must be an integer number"
 msgstr "має бути цілим числом"
 
-#: ../framework/src/_translator.php:49
+#: ../framework/src/_translator.php:50
 msgid "must be negative"
 msgstr "має бути менше нуля"
 
-#: ../framework/src/_translator.php:50
+#: ../framework/src/_translator.php:51
 msgid "must be numeric"
 msgstr "має бути числом"
 
-#: ../framework/src/_translator.php:51
+#: ../framework/src/_translator.php:52
 msgid "must be positive"
 msgstr "має бути більшим за нуль"
 
-#: ../framework/src/_translator.php:60
+#: ../framework/src/_translator.php:62
 msgid "must not be empty"
 msgstr "не має бути пустим"
 
-#: ../framework/src/_translator.php:61
+#: ../framework/src/_translator.php:63
 msgid "must not contain whitespace"
 msgstr "не має містити пробіли"
 
-#: ../framework/src/_translator.php:62
+#: ../framework/src/_translator.php:64
 msgid "must validate with regular expression rule"
 msgstr "потрібно перевірити за правилом"
 
@@ -253,7 +241,7 @@ msgstr "потрібно перевірити за правилом"
 msgid "Guest"
 msgstr "Гість"
 
-#: application/library/Application/Bootstrap.php:86
+#: application/library/Application/Bootstrap.php:128
 #: application/modules/error/controllers/index.php:83
 msgid "You don't have permissions, please sign in"
 msgstr "У вас немає дозволу, будь ласка, увійдіть"
@@ -427,9 +415,26 @@ msgid "System"
 msgstr "Система"
 
 #: application/modules/system/controllers/info.php:29
-#: application/modules/system/views/index.phtml:9
+#: application/modules/system/views/index.phtml:10
 msgid "PHP Info"
 msgstr "PHP Info"
+
+#: application/modules/system/controllers/queues.php:31
+#: application/modules/system/views/index.phtml:9
+msgid "Queues"
+msgstr "Черги"
+
+#: application/modules/system/controllers/queues.php:53
+msgid "Message was created"
+msgstr "Повідомлення було створено"
+
+#: application/modules/system/controllers/queues.php:64
+msgid "Message was acknowledged"
+msgstr "Повідомлення було визнано"
+
+#: application/modules/system/controllers/queues.php:67
+msgid "Message was rejected"
+msgstr "Повідомлення відхилено"
 
 #: application/modules/system/controllers/routers.php:29
 #: application/modules/system/views/index.phtml:8
@@ -755,6 +760,18 @@ msgstr "Swagger documented API"
 msgid "Bookmarklets generator"
 msgstr "Аплети-закладки"
 
+#: application/modules/system/views/queues.phtml:6
+msgid "This is the queues test page"
+msgstr "Це тестова сторінцка для черг"
+
+#: application/modules/system/views/queues.phtml:7
+msgid "Produce"
+msgstr "Виробляти"
+
+#: application/modules/system/views/queues.phtml:8
+msgid "Consume"
+msgstr "Споживати"
+
 #: application/modules/system/views/routers.phtml:6
 msgid "Module"
 msgstr "Модуль"
@@ -945,3 +962,15 @@ msgstr[2] "активно %d користувачів"
 #: application/modules/users/views/widgets/stats.phtml:22
 msgid "last registered"
 msgstr "останній зареєстрований"
+
+#~ msgid "must contain only letters and digits"
+#~ msgstr "має містити лише латинські літери та цифри"
+
+#~ msgid "must contain only letters, digits and \"%s\""
+#~ msgstr "має містити лише латинські літери, цифри та \"%s\""
+
+#~ msgid "must contain only letters"
+#~ msgstr "має містити лише букви"
+
+#~ msgid "must contain only letters and \"%s\""
+#~ msgstr "має містити лише латинські літери та \"%s\""
