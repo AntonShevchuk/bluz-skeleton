@@ -92,6 +92,15 @@
           ) ?>
       </li>
     <?php endif; ?>
+    <?php if ($this->hasModule('queues')) : ?>
+      <li class="nav-item <?= ($this->module('queues') ? 'active' : '') ?>">
+          <?= $this->ahref(
+              '<i class="fab fa-stack-overflow fa-fw"></i> ' . __('Queues'),
+              ['options', 'grid', [], true],
+              ['class' => 'nav-link']
+          ) ?>
+      </li>
+    <?php endif; ?>
     <li class="nav-item <?= ($this->module('system') ? 'active' : '') ?>">
         <?= $this->ahref(
             '<i class="fa fa-wrench fa-fw"></i> ' . __('System'),
