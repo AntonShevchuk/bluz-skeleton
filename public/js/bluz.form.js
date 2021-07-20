@@ -13,7 +13,7 @@ define(['bluz', 'jquery'], function (bluz, $) {
   let form;
   let settings;
   let defaults = {
-    container: 'form-group',           // default for Twitter Bootstrap layout
+    container: 'form-group',           // default for layout
     feedback: 'invalid-feedback',
     errorClass: 'is-invalid',
     inputCollection: false,            // uses 'data[field-name]' or 'field-name'
@@ -48,6 +48,7 @@ define(['bluz', 'jquery'], function (bluz, $) {
 
       // add error class to field
       $field.addClass(settings.errorClass);
+      $field.parent('.input-group').addClass(settings.errorClass);
       $field.get(0).setCustomValidity(messages);
 
       // create feedback dom element

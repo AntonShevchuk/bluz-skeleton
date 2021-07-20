@@ -15,6 +15,7 @@ use Bluz\Controller\Controller;
 use Bluz\Http\Exception\ForbiddenException;
 use Bluz\Http\Exception\RedirectException;
 use Bluz\Proxy\Auth as AuthProxy;
+use Bluz\Proxy\Config;
 use Bluz\Proxy\Layout;
 use Bluz\Proxy\Logger;
 use Bluz\Proxy\Messages;
@@ -22,29 +23,54 @@ use Bluz\Proxy\Request;
 use Bluz\Proxy\Response;
 use Bluz\Proxy\Router;
 use Bluz\Proxy\Session;
+use Bluz\Proxy\Translator;
 
 /**
  * Bootstrap
  *
  * @category Application
  * @package  Bootstrap
- *
- * @author   Anton Shevchuk
- * @created  20.07.11 17:38
  */
 class Bootstrap extends Application
 {
     /**
      * {@inheritdoc}
      */
-    protected function preProcess() : void
+    protected function initTranslator(): void
     {
-        parent::preProcess();
+        $translator = new \Bluz\Translator\Translator();
+        $translator->setOptions(Config::get('translator'));
 
-        $path = $this->getPath() . '/modules';
-        foreach (glob($path .'/*/init.php') as $initial) {
-            (include $initial)($this);
+        // supported locales
+        // en_US, ru_RU, uk_UA
+        $locales = [
+            'en' => 'en_US',
+            'ru' => 'ru_RU',
+            'uk' => 'uk_UA',
+        ];
+
+        // try to check locale from cookies
+        $locale = Request::getCookie('locale');
+
+        // try to get locale from browser
+        if (!$locale) {
+            $languages = Request::getAcceptLanguage();
+            foreach ($languages as $language => $priority) {
+                if (array_key_exists($language, $locales)) {
+                    $locale = $language;
+                    break;
+                }
+            }
         }
+
+        // normalize locale
+        if (array_key_exists($locale, $locales)) {
+            $translator->setLocale($locales[$locale]);
+        }
+
+        $translator->init();
+
+        Translator::setInstance($translator);
     }
 
     /**
@@ -53,11 +79,12 @@ class Bootstrap extends Application
      * @param Controller $controller
      *
      * @return void
-     * @throws \Application\Exception
-     * @throws \Bluz\Auth\AuthException
-     * @throws \InvalidArgumentException
+     * @throws AuthException
+     * @throws Exception
+     * @throws \Bluz\Db\Exception\DbException
+     * @throws \Bluz\Db\Exception\InvalidPrimaryKeyException
      */
-    protected function preDispatch($controller) : void
+    protected function preDispatch($controller): void
     {
         // example of setup default title
         Layout::title('Bluz Skeleton');
@@ -85,7 +112,7 @@ class Bootstrap extends Application
      *
      * @return \Bluz\Controller\Controller|null
      */
-    public function forbidden(ForbiddenException $exception) : ?Controller
+    public function forbidden(ForbiddenException $exception): ?Controller
     {
         // for AJAX and API calls (over JSON)
         $jsonOrApi = Request::isXmlHttpRequest()
@@ -110,20 +137,10 @@ class Bootstrap extends Application
      *
      * @return void
      */
-    public function render() : void
+    public function render(): void
     {
         Logger::info('app:render');
         Logger::info('app:files:' . count(get_included_files()));
-
-        if ($this->isDebug()) {
-            if (!headers_sent()) {
-                $this->sendInfoHeaders();
-            }
-            if (ob_get_level() > 0 && ob_get_length() > 0) {
-                Logger::error('Output has been sent previously');
-                return;
-            }
-        }
         parent::render();
     }
 
@@ -132,7 +149,7 @@ class Bootstrap extends Application
      *
      * @return void
      */
-    public function end() : void
+    public function end(): void
     {
         if ($errors = Logger::get('error')) {
             $this->sendErrors($errors);
@@ -140,36 +157,13 @@ class Bootstrap extends Application
     }
 
     /**
-     * Send information headers
-     *
-     * @return void
-     */
-    protected function sendInfoHeaders() : void
-    {
-        $debugString = sprintf(
-            '%fsec; %skb',
-            microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'],
-            ceil(memory_get_usage() / 1024)
-        );
-        $debugString .= '; ' . Request::getModule() . '/' . Request::getController();
-
-        Response::setHeader('Bluz-Debug', $debugString);
-
-        if ($info = Logger::get('info')) {
-            Response::setHeader('Bluz-Bar', json_encode($info));
-        } else {
-            Response::setHeader('Bluz-Bar', '{"!":"Logger is disabled"}');
-        }
-    }
-
-    /**
      * sendErrorBody
      *
-     * @param  array $errors
+     * @param array $errors
      *
      * @return void
      */
-    protected function sendErrors($errors) : void
+    protected function sendErrors($errors): void
     {
         foreach ($errors as $message) {
             errorLog(new \ErrorException($message, 0, E_USER_ERROR));

@@ -9,12 +9,14 @@ declare(strict_types=1);
 namespace Application\UsersRoles;
 
 /**
- * Table
+ * Table of Users to Roles relations
  *
  * @package  Application\Roles
  *
- * @method   static Row findRow($primaryKey)
- * @method   static Row findRowWhere($whereList)
+ * @method   static ?Row findRow($primaryKey)
+ * @see      \Bluz\Db\Table::findRow()
+ * @method   static ?Row findRowWhere($whereList)
+ * @see      \Bluz\Db\Table::findRowWhere()
  */
 class Table extends \Bluz\Db\Table
 {
@@ -37,7 +39,7 @@ class Table extends \Bluz\Db\Table
      *
      * @return void
      */
-    public function init() : void
+    public function init(): void
     {
         $this->linkTo('userId', 'Users', 'id');
         $this->linkTo('roleId', 'Roles', 'id');

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Phinx configuration
  *
@@ -16,8 +17,9 @@ return [
     'environments' => [
         'default_migration_table' => 'migrations',
         'default' => (function () {
-            $data = \Bluz\Proxy\Config::getData('db', 'connect');
+            $data = \Bluz\Proxy\Config::get('db', 'connect');
             $data['adapter'] = $data['type'];
+            $data['charset'] = 'utf8';
             return $data;
         })()
     ]

@@ -2,9 +2,9 @@
 /**
  * Logout proccess
  *
+ * @return closure
  * @author   Anton Shevchuk
  * @created  20.07.11 18:39
- * @return closure
  */
 
 namespace Application;
@@ -23,7 +23,7 @@ return function () {
      * @var Controller $this
      */
     if ($this->user()) {
-        AppAuth\Provider\Cookie::remove($this->user()->id);
+        AppAuth\Provider\Cookie::remove($this->user()->getId());
         Auth::clearIdentity();
     }
 

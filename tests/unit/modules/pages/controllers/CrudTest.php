@@ -25,8 +25,9 @@ class CrudTest extends ControllerTestCase
      * setUp
      *
      * @return void
+     * @throws \Bluz\Application\Exception\ApplicationException
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         self::getApp()->useLayout(false);

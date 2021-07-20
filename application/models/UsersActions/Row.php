@@ -9,19 +9,16 @@ declare(strict_types=1);
 namespace Application\UsersActions;
 
 /**
- * User Actions
+ * Row of User Actions
  *
  * @package  Application\Users
  *
  * @property integer $userId
- * @property string  $code
- * @property string  $action
- * @property string  $params
- * @property string  $created
- * @property string  $expired
- *
- * @author   Anton Shevchuk
- * @created  05.12.12 10:32
+ * @property string $code
+ * @property string $action
+ * @property string $params
+ * @property string $created
+ * @property string $expired
  */
 class Row extends \Bluz\Db\Row
 {
@@ -30,7 +27,7 @@ class Row extends \Bluz\Db\Row
      *
      * @return void
      */
-    public function beforeSave() : void
+    public function beforeSave(): void
     {
         $this->params = serialize($this->params);
     }
@@ -40,8 +37,8 @@ class Row extends \Bluz\Db\Row
      *
      * @return array
      */
-    public function getParams()
+    public function getParams(): array
     {
-        return $this->params ? unserialize($this->params, []) : [];
+        return $this->params ? unserialize($this->params, ['allowed_classes' => false]) : [];
     }
 }

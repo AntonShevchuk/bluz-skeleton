@@ -7,9 +7,12 @@
 /**
  * @namespace
  */
+
 namespace Application;
 
 use Bluz\Controller\Controller;
+use Bluz\Db\Exception\DbException;
+use Bluz\Db\Exception\InvalidPrimaryKeyException;
 use Bluz\Proxy\Cache;
 use Bluz\Proxy\Db;
 use Bluz\Proxy\Messages;
@@ -24,6 +27,8 @@ use Bluz\Proxy\Request;
  *
  * @return bool
  * @throws Exception
+ * @throws DbException
+ * @throws InvalidPrimaryKeyException
  */
 return function ($id) {
     /**

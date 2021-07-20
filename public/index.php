@@ -2,12 +2,9 @@
 /**
  * Index file
  *
- * @author   C.O.
  * @created  06.07.11 16:20
  */
-/**
- * @namespace
- */
+
 namespace Application;
 
 // Check CLI
@@ -24,6 +21,7 @@ header('X-Frame-Options: SAMEORIGIN');
 
 // Make fake header
 header('X-Powered-By: backend');
+
 // Try to run application
 try {
     /**
@@ -31,9 +29,6 @@ try {
      * @see http://getcomposer.org/apidoc/master/Composer/Autoload/ClassLoader.html
      */
     require_once dirname(__DIR__) . '/vendor/autoload.php';
-
-    // Error handler for log all errors
-    set_error_handler('\\Application\\errorHandler', E_ALL);
 
     // Environment
     $env = getenv('BLUZ_ENV') ?: 'production';
@@ -43,6 +38,6 @@ try {
 } catch (\Throwable $e) {
     // display error page
     require_once __DIR__ .'/error.php';
-    // try to write log "warning"
+    // write logs
     errorLog($e);
 }

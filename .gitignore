@@ -1,7 +1,16 @@
 .DS_Store
 .idea
-/vendor
 composer.lock
 composer.phar
 codecept.phar
 codeception.yml
+/application/configs/dev
+/data/cache
+/data/logs
+/data/queues
+/data/sessions
+/data/uploads
+/public/.htaccess
+/public/redactor
+/public/vendor
+/vendor

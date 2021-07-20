@@ -10,6 +10,7 @@
 namespace Application\Tests\Pages;
 
 use Application\Tests\ControllerTestCase;
+use Bluz\Http\Exception\NotFoundException;
 
 /**
  * @group    pages
@@ -22,10 +23,11 @@ class IndexTest extends ControllerTestCase
 {
     /**
      * Dispatch controller only, w/out application
-     * @expectedException \Bluz\Http\Exception\NotFoundException
      */
     public function testNotFoundPage()
     {
+        $this->expectException(NotFoundException::class);
+
         self::getApp()->dispatch('pages', 'index', ['alias' => uniqid('random_name_', true)]);
     }
 
@@ -37,6 +39,6 @@ class IndexTest extends ControllerTestCase
         $this->dispatch('/about.html');
         self::assertModule('pages');
         self::assertController('index');
-        self::assertQueryContentContains('h1', 'About Bluz Framework');
+        self::assertQueryContentContains('h1', 'About');
     }
 }

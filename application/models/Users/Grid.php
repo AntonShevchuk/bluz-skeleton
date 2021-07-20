@@ -12,7 +12,7 @@ use Bluz\Db\Query\Select;
 use Bluz\Grid\Source\SelectSource;
 
 /**
- * Grid of users
+ * Grid of Users
  *
  * @method   Row[] getData()
  *
@@ -29,20 +29,25 @@ class Grid extends \Bluz\Grid\Grid
      * {@inheritdoc}
      * @throws \Bluz\Grid\GridException
      */
-    public function init() : void
+    public function init(): void
     {
         // Create Select
-        $select = new Select();
-        $select->select('u.*, GROUP_CONCAT( ar.`name` SEPARATOR ", " ) AS rolesList')
-            ->from('users', 'u')
-            ->leftJoin('u', 'acl_users_roles', 'aur', 'u.`id` = aur.`userId`')
+        $select = Table::select();
+        $select->select('users.*, GROUP_CONCAT( ar.`name` SEPARATOR ", " ) AS rolesList')
+            ->leftJoin('users', 'acl_users_roles', 'aur', 'users.`id` = aur.`userId`')
             ->leftJoin('aur', 'acl_roles', 'ar', 'ar.`id` = aur.`roleId`')
-            ->groupBy('u.id');
+            ->groupBy('users.id');
 
 
         // Setup adapter
         $adapter = new SelectSource();
         $adapter->setSource($select);
+
+        $this->addAlias('users.login', 'login');
+        $this->addAlias('users.email', 'email');
+        $this->addAlias('users.status', 'status');
+        $this->addAlias('users.id', 'id');
+        $this->addAlias('users.roleId', 'role');
 
         $this->setAdapter($adapter);
         $this->setDefaultLimit(25);

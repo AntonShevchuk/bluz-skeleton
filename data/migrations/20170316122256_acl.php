@@ -30,7 +30,7 @@ class Acl extends AbstractMigration
      */
     public function change()
     {
-        $roles = $this->table('acl_roles', ['primary_key' => ['id', 'code']]);
+        $roles = $this->table('acl_roles');
         $roles
             ->addColumn('name', 'string', ['length'=>255])
             ->addColumn('created', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'update' => ''])
@@ -48,7 +48,7 @@ class Acl extends AbstractMigration
             ->addColumn('roleId', 'integer')
             ->addColumn('module', 'string', ['length'=>32])
             ->addColumn('privilege', 'string', ['length'=>32])
-            ->addForeignKey('roleId', $roles, 'id', [
+            ->addForeignKey('roleId', $roles->getTable(), 'id', [
                 'delete' => 'CASCADE',
                 'update' => 'CASCADE'
             ])
@@ -62,7 +62,7 @@ class Acl extends AbstractMigration
                 'delete' => 'CASCADE',
                 'update' => 'CASCADE'
             ])
-            ->addForeignKey('roleId', $roles, 'id', [
+            ->addForeignKey('roleId', $roles->getTable(), 'id', [
                 'delete' => 'CASCADE',
                 'update' => 'CASCADE'
             ])

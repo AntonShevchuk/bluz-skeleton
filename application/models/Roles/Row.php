@@ -11,12 +11,12 @@ namespace Application\Roles;
 use Bluz\Validator\Traits\Validator;
 
 /**
- * User Role
+ * Row of User Role
  *
  * @package Application\Roles
  *
  * @property integer $id
- * @property string  $name
+ * @property string $name
  */
 class Row extends \Bluz\Db\Row
 {
@@ -27,7 +27,7 @@ class Row extends \Bluz\Db\Row
      *
      * @throws \Bluz\Validator\Exception\ComponentException
      */
-    protected function beforeInsert() : void
+    protected function beforeInsert(): void
     {
         $this->addValidator('name')
             ->required()
@@ -45,7 +45,7 @@ class Row extends \Bluz\Db\Row
      *
      * @throws \Bluz\Validator\Exception\ComponentException
      */
-    protected function beforeUpdate() : void
+    protected function beforeUpdate(): void
     {
         $this->addValidator('name')
             ->required()
@@ -58,7 +58,7 @@ class Row extends \Bluz\Db\Row
             )
             ->callback(
                 function ($name) {
-                    return $this->clean['name'] != $name;
+                    return $this->clean['name'] !== $name;
                 },
                 'Role name is the same as original'
             )
@@ -75,7 +75,7 @@ class Row extends \Bluz\Db\Row
      *
      * @return boolean
      */
-    public function isBasic() : bool
+    public function isBasic(): bool
     {
         return in_array(strtolower($this->name), Table::getInstance()->getBasicRoles(), false);
     }

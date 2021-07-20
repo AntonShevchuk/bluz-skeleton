@@ -16,14 +16,22 @@ use Bluz\Auth\AuthException;
 /**
  * Equals Provider
  *
- * @package  Application\Auth
- * @author   Anton Shevchuk
+ * @package  Application\Auth\Provider
  */
 class Equals extends AbstractProvider
 {
-    const PROVIDER = Table::PROVIDER_EQUALS;
+    public const PROVIDER = Table::PROVIDER_EQUALS;
 
-    public static function authenticate($username, $password = '') : void
+    /**
+     * @param string $username
+     * @param string $password
+     *
+     * @throws AuthException
+     * @throws \Bluz\Db\Exception\DbException
+     * @throws \Bluz\Db\Exception\InvalidPrimaryKeyException
+     * @throws \Application\Exception
+     */
+    public static function authenticate($username, $password = ''): void
     {
         $authRow = self::verify($username, $password);
         $user = UsersTable::findRow($authRow->userId);
@@ -32,7 +40,16 @@ class Equals extends AbstractProvider
         Table::tryLogin($user);
     }
 
-    public static function verify($username, $password = '') : Row
+    /**
+     * @param string $username
+     * @param string $password
+     *
+     * @return Row
+     * @throws AuthException
+     * @throws \Application\Exception
+     * @throws \Bluz\Db\Exception\DbException
+     */
+    public static function verify($username, $password = ''): Row
     {
         /* @var Row $authRow */
         $authRow = Table::findRowWhere(['foreignKey' => $username, 'provider' => Table::PROVIDER_EQUALS]);
@@ -49,7 +66,17 @@ class Equals extends AbstractProvider
         return $authRow;
     }
 
-    public static function create($user, $password = '') : Row
+    /**
+     * @param         $user
+     * @param string $password
+     *
+     * @return Row
+     * @throws \Application\Exception
+     * @throws \Bluz\Db\Exception\DbException
+     * @throws \Bluz\Db\Exception\InvalidPrimaryKeyException
+     * @throws \Bluz\Db\Exception\TableNotFoundException
+     */
+    public static function create($user, $password = ''): Row
     {
         // remove old Auth record
         self::remove($user->id);

@@ -16,11 +16,10 @@ use \Application\Users\Row as User;
  * AbstractProvider
  *
  * @package  Application\Auth\Provider
- * @author   Anton Shevchuk
  */
 abstract class AbstractProvider
 {
-    const PROVIDER = 'abstract';
+    public const PROVIDER = 'abstract';
 
     /**
      * Authenticate user by token
@@ -31,7 +30,7 @@ abstract class AbstractProvider
      * @throws \Application\Exception
      * @throws \Bluz\Auth\AuthException
      */
-    abstract public static function authenticate($token) : void;
+    abstract public static function authenticate($token): void;
 
     /**
      * Check if supplied cookie is valid
@@ -41,7 +40,7 @@ abstract class AbstractProvider
      * @return Row
      * @throws \Bluz\Auth\AuthException
      */
-    abstract public static function verify($token) : Row;
+    abstract public static function verify($token): Row;
 
     /**
      * Create and save Auth record, and send cookies
@@ -52,7 +51,7 @@ abstract class AbstractProvider
      * @throws \Application\Exception
      * @throws \Bluz\Auth\AuthException
      */
-    abstract public static function create($user) : Row;
+    abstract public static function create($user): Row;
 
     /**
      * Remove Auth record by user ID
@@ -60,10 +59,9 @@ abstract class AbstractProvider
      * @param integer $id User ID
      *
      * @return void
-     * @throws \Bluz\Common\Exception\ConfigurationException
      * @throws \Bluz\Db\Exception\DbException
      */
-    public static function remove($id) : void
+    public static function remove($id): void
     {
         // clear previous generated Auth record
         // works with change password

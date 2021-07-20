@@ -21,13 +21,10 @@ use Bluz\Proxy\Auth;
  *
  * @package  Application\Auth
  *
- * @method   static Row findRow($primaryKey)
+ * @method   static ?Row findRow($primaryKey)
  * @see      \Bluz\Db\Table::findRow()
- * @method   static Row findRowWhere($whereList)
+ * @method   static ?Row findRowWhere($whereList)
  * @see      \Bluz\Db\Table::findRowWhere()
- *
- * @author   Anton Shevchuk
- * @created  12.07.11 15:28
  */
 class Table extends AbstractTable
 {
@@ -36,10 +33,10 @@ class Table extends AbstractTable
      *
      * @param string $password
      *
-     * @throws \Application\Exception
      * @return string
+     * @throws \Application\Exception
      */
-    public static function hash($password) : string
+    public static function hash($password): string
     {
         $hash = Auth::getInstance()->getOption('hash');
 
@@ -57,10 +54,10 @@ class Table extends AbstractTable
      * @param string $password
      * @param string $hash
      *
-     * @throws \Application\Exception
      * @return bool
+     * @throws \Application\Exception
      */
-    public static function verify($password, $hash) : bool
+    public static function verify($password, $hash): bool
     {
         $verify = Auth::getInstance()->getOption('verify');
 
@@ -79,7 +76,7 @@ class Table extends AbstractTable
      *
      * @throws AuthException
      */
-    public static function tryLogin($user) : void
+    public static function tryLogin($user): void
     {
         switch ($user->status) {
             case (Users\Table::STATUS_PENDING):
